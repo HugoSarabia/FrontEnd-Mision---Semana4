@@ -1,0 +1,169 @@
+:root{
+	--poppins:'Poppins', sans-serif;
+	--fuente-titulo: 'Montserrat', sans-serif;
+    --funte-titulo-bold: 'Be Vietnam Pro', sans-serif;
+}
+*{
+	box-sizing: border-box;
+	font-family: var(--poppins);
+}
+html{
+	background: linear-gradient(0deg, #3461AD 0%, #11B5E4 100%);
+	background-repeat: no-repeat;
+	height: 170%;
+}
+body {
+	margin: 0;	
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+header {
+	background-color: #ee2e3a;
+	margin-bottom: 30px;
+	padding: 1em 5px 2em;
+	color: white;
+	display: flex;
+	justify-content: space-around;
+} 	
+
+.container {
+	align-self: center;
+	width: 100%;
+	max-width: 1200px;
+}
+
+#search form{
+	display: flex;
+	justify-content: center;
+}
+
+#searchBox{
+	width: 50%;
+	min-width: 300px;
+	border: 1px solid #ebebeb;
+ 	padding: 11px 20px;
+	box-sizing: border-box;
+  	font-weight: 500;
+  	font-size: 20px;
+  	margin-bottom: 20px;
+	border-radius: 20px;
+}
+#searchBox:focus{
+	border: 1px solid #1fa76f;
+	outline: none;
+}
+
+.center {
+	text-align:center;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.card {
+	list-style: none;
+	padding-bottom: 3em !important;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 40px;
+	margin-bottom: 15px;
+	margin-right: 30em;
+	margin-left: 30em;
+	text-align: center;
+	background-color:#E7F3FC;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.top{
+	padding-top: 3em;
+    padding-bottom: 1.5em;
+    border-radius: 40px 40px 0 0;
+}
+.card-image{
+	width: 30%;
+	height: 30%;
+	float: none;
+	/*background-color: #e7f3fc;*/
+    border-radius: 25%;
+    box-shadow: 0px 10px 40px rgb(3 19 23 / 25%);
+}
+.card-title{
+	text-transform: uppercase;
+	font-family: var(--fuente-titulo);
+	font-size: 2.2rem;
+	margin-top: 0px;
+}
+.card-subtitle{
+	text-transform: capitalize;
+	font-weight: lighter;
+	font-size: 1.7rem;
+	margin-top: 0px;
+}
+.card-information{
+	margin: 0;
+	padding-bottom: 7px;
+}
+.stats{
+	display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+.stats li{
+	text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+img{
+	width: 40px;
+	float: left;
+	margin-left: 10px;
+}
+.pokeball{
+	width: 10%;
+	float: left;
+	margin-left: 10px;
+	background-color: #ee2e3a;
+}
+.logo{
+	width: 25%;
+	float: left;
+	margin-left: 10px;
+	background-color: #ee2e3a;
+}
+#pokedex{
+	padding-inline-start: 0;
+}
+.image {
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+.error{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+.error-text{
+	font-family: var(--poppins);
+	font-size: 1.5em;
+}
+.error-img{
+    width: 250px;
+    height: 250px;
+
+}
+  
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
